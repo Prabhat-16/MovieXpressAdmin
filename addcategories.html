@@ -749,7 +749,7 @@
                                 <div class="card">
                                     <div class="card-header-lg">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-4 col-12">
-                                            <div class="form-section-header">Add Movies</div>
+                                            <div class="form-section-header">Add Categories</div>
                                         </div>
                                     </div>
                     
@@ -760,59 +760,21 @@
                                             <div class="row gutters">
                     
                     
-                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
-                                                    <div class="vertical"></div>
-                                                    <div id="dropzone-sm" class="mb-3 image-upload-clear-image">
-                                                        <div class="dropzone needsclick dz-clickable" id="demo-upload">
-                                                            <input type="file" id="upload-user-profile-default" name="user_profile" style="display:none;" onchange="saveImage(this)" />
-                                                            <input type="hidden" id="upload-user-profile-temp-default" value="" />
-                                                            <div class="dz-message needsclick" style="text-align: center; margin-top: 54px;"><label id="upload-user-profile-default-preview" for="upload-user-profile-default">Upload Movie Picture</label></div>
+                                                
                     
-                                                        </div>
-                    
-                                                        <div style="text-align:center;padding-top:10px;">
-                                                            <button class="btn btn-outline-primary" onclick="clearUserProfileDefault()">Clear Movie Picture</button>
-                                                        </div>
-                    
-                                                    </div>
-                    
-                                                </div>
-                    
-                                                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                     <div class="row gutters">
                                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                                             <!-- Field wrapper start -->
                                                             <div class="field-wrapper">
                                                                 <input type="text" class="form-control" name="" id="">
-                                                                <div class="field-placeholder" style="color: #DF0E62;">Movie Name</div>
+                                                                <div class="field-placeholder" style="color: #DF0E62;">Movie Categories</div>
                                                             </div>
                                                             <!-- Field wrapper end -->
                                                         </div>
                     
-                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                            <!-- Field wrapper start -->
-                                                            <div class="field-wrapper">
-                                                                <input type="decimal" class="form-control" name="" id="">
-                                                                <div class="field-placeholder" style="color: #DF0E62;">Duration</div>
-                                                            </div>
-                                                            <!-- Field wrapper end -->
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                            <!-- Field wrapper start -->
-                                                            <div class="field-wrapper">
-                                                                <select class="" name="" id="" >
-                                                                    <option value="" selected>--Select--</option>
-																	<option value="">New Realeases</option>
-																	<option value="">Popular Movies</option>
-																	<option value="">Kids Movies</option>
-																	<option value="">Gujarati Movies</option>
-                                                                </select>
-                                                                <div class="field-placeholder" style="color: #DF0E62;">Movie Categories</div>
-                
-                                                            </div>
-                                                            <!-- Field wrapper end -->
-                
-                                                        </div>
+                                                        
+
                     
                                                     </div>
                                                 </div>
@@ -848,7 +810,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-4 col-12">
-                                            <div class="form-section-header"> Movie's Data Table</div>
+                                            <div class="form-section-header"> Categories Data Table</div>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -858,9 +820,6 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Actions</th>
-                                                        <th>Movie Profile</th>
-                                                        <th>Movie Name</th>
-                                                        <th>Duration</th>
 														<th>Movie Category</th>
                                                     </tr>
                                                 </thead>
@@ -968,11 +927,6 @@
                     $(previewStr).css('color', 'red');
                     return false;
                 }
-            }
-        
-            function clearUserProfileDefault() {
-                $("#upload-user-profile-default-preview").html("Upload Movie Picture.");
-                $("#upload-user-profile-default").val("");
             }
         </script>
 
